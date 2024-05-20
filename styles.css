@@ -6,21 +6,27 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
+    background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom right, #12c2e9, #c471ed, #f64f59);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom right, #12c2e9, #c471ed, #f64f59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+    }
 
 #board {
     width: 600px;
     height: 600px;
     display: flex;
     flex-wrap: wrap;
-    border: solid 2px black;
+    border: solid 2px #E3BEF4;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 .square {
     width:200px;
     height:200px;
-    background-color: #fff;
-    border: solid 4px black;
+    background-color: #F4ECF8;
+    border: solid 4px #E3BEF4;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -31,7 +37,7 @@ body {
     width:180px;
     height:180px;
     border-radius: 50%;
-border:solid 30px blue ;
+border:solid 30px #12c2e9 ;
 box-sizing: border-box;
 }
 
@@ -47,7 +53,7 @@ transform: rotate(45deg);
 .cross::before, .cross::after {
     content: '';
     position: absolute;
-    background-color: red;
+    background-color: #f64f59;
 }
     
 .cross::before {
@@ -62,4 +68,11 @@ transform: rotate(45deg);
     height:30%;
     width: 100%;
     margin-top: -15%;
+}
+
+#info {
+    color:#fafafa;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
 }
