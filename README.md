@@ -1,4 +1,6 @@
-# noughts-and-crosses
+# Noughts and Crosses
 An introduction to making games with JS based on Code with Ania Kubow's tutorial.
 
-I learned more about manipulating the DOM.
+## To view
+Follow this link:
+noughts-and-crosses-seven.vercel.app
